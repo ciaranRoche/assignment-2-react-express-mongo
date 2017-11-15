@@ -1,0 +1,426 @@
+[{
+  "model" : "User",
+  "documents": [{
+      "id": 1,
+      "firstname": "Gardner",
+      "surname": "Golden",
+      "gender": "male",
+      "email": "gardnergolden@earwax.com",
+      "password": "sit",
+      "address": "729 Benson Avenue, Ballico, Mississippi, 4383",
+      "about": "Adipisicing excepteur ea consectetur aliquip. Qui do tempor sit nostrud do Lorem eu. Magna do enim ipsum minim reprehenderit ipsum deserunt Lorem id ex pariatur ipsum. Est ex voluptate sunt dolor ut culpa nulla ea ullamco deserunt culpa officia aliquip mollit.\r\n",
+      "collections": [
+        9,
+        8,
+        3,
+        2,
+        5
+      ],
+      "profile_image": "https://randomuser.me/api/portraits/men/11.jpg"
+    },
+    {
+      "id": 2,
+      "firstname": "Sondra",
+      "surname": "Beasley",
+      "gender": "female",
+      "email": "sondrabeasley@earwax.com",
+      "password": "elit",
+      "address": "842 Apollo Street, Lowell, Tennessee, 319",
+      "about": "Qui ad ullamco consequat sunt duis enim qui consectetur velit veniam non anim. Elit excepteur qui in aliquip amet aute sunt laborum qui minim voluptate. Voluptate pariatur esse cillum aliqua duis minim est.\r\n",
+      "collections": [
+        9,
+        2,
+        3,
+        7
+      ],
+      "profile_image": "https://randomuser.me/api/portraits/women/13.jpg"
+    },
+    {
+      "id": 3,
+      "firstname": "Hope",
+      "surname": "England",
+      "gender": "female",
+      "email": "hopeengland@earwax.com",
+      "password": "excepteur",
+      "address": "694 Cortelyou Road, Barronett, Northern Mariana Islands, 3007",
+      "about": "Ipsum laborum duis labore labore proident veniam tempor excepteur non nostrud id do nostrud. Eu ea qui cillum occaecat officia sint sit ea. Adipisicing excepteur ad ipsum ullamco. Duis officia sunt et id tempor non cillum id exercitation laborum.\r\n",
+      "collections": [
+        4,
+        2,
+        8,
+        7,
+        9,
+        5
+      ],
+      "profile_image": "https://randomuser.me/api/portraits/women/9.jpg"
+    },
+    {
+      "id": 4,
+      "firstname": "Emily",
+      "surname": "Byers",
+      "gender": "female",
+      "email": "emilybyers@earwax.com",
+      "password": "ipsum",
+      "address": "403 Clark Street, Wilmington, Montana, 4747",
+      "about": "Lorem ad amet amet ex sint proident dolore labore. Adipisicing velit adipisicing sit incididunt eu aute ex ad dolor irure commodo amet. Veniam commodo aliquip non et adipisicing ea est ullamco. Eu anim ut quis sit eiusmod cupidatat in sint id est incididunt.\r\n",
+      "collections": [
+        4,
+        2,
+        8,
+        7,
+        9
+      ],
+      "profile_image": "https://randomuser.me/api/portraits/women/28.jpg"
+    },
+    {
+      "id": 5,
+      "firstname": "Lester",
+      "surname": "Shelton",
+      "gender": "male",
+      "email": "lestershelton@earwax.com",
+      "password": "nulla",
+      "address": "268 Beadel Street, Salix, South Dakota, 4057",
+      "about": "Velit laborum non sit ea ad sint non id et duis. Voluptate amet magna reprehenderit nisi amet enim fugiat do anim sit culpa cupidatat. Commodo commodo dolor cupidatat mollit ad voluptate officia officia sit voluptate. Amet non occaecat in labore irure ad id fugiat. Pariatur culpa sit nulla eiusmod exercitation occaecat.\r\n",
+      "collections": [
+        2,
+        3,
+        7,
+        9,
+        5
+      ],
+      "profile_image": "https://randomuser.me/api/portraits/men/12.jpg"
+    },
+    {
+      "id": 6,
+      "firstname": "Tessa",
+      "surname": "Abbott",
+      "gender": "female",
+      "email": "tessaabbott@earwax.com",
+      "password": "laborum",
+      "address": "980 Dinsmore Place, Fruitdale, Arkansas, 1157",
+      "about": "Aliquip minim id tempor sit laborum elit est quis culpa dolor nulla magna sunt. Nisi pariatur dolore exercitation cupidatat irure. Incididunt ut amet cupidatat ullamco ut sit sunt. Ullamco commodo consectetur mollit Lorem tempor do reprehenderit aliquip commodo cupidatat est exercitation.\r\n",
+      "collections": [
+        8,
+        3,
+        4,
+        2,
+        4,
+        7
+      ],
+      "profile_image": "https://randomuser.me/api/portraits/women/77.jpg"
+    },
+    {
+      "id": 7,
+      "firstname": "Emma",
+      "surname": "Thompson",
+      "gender": "female",
+      "email": "emmathompson@earwax.com",
+      "password": "minim",
+      "address": "458 Hunts Lane, Ahwahnee, Hawaii, 1040",
+      "about": "Qui do anim tempor anim Lorem non. Exercitation ea proident nisi ut sint ea proident. Nostrud occaecat sunt est cupidatat sunt ipsum veniam. Dolore velit cupidatat pariatur adipisicing eiusmod in reprehenderit minim. Eiusmod elit tempor non ut ullamco eiusmod laborum. Officia occaecat eiusmod consequat dolor veniam duis.\r\n",
+      "collections": [
+        5,
+        9,
+        2,
+        7,
+        8
+      ],
+      "profile_image": "https://randomuser.me/api/portraits/women/21.jpg"
+    },
+    {
+      "id": 8,
+      "firstname": "Guadalupe",
+      "surname": "Albert",
+      "gender": "female",
+      "email": "guadalupealbert@earwax.com",
+      "password": "ad",
+      "address": "360 Noel Avenue, Finderne, Pennsylvania, 5822",
+      "about": "Do consectetur ut in magna qui eu. Laborum do in reprehenderit consequat adipisicing officia exercitation et aliquip incididunt. Commodo in ullamco elit esse proident tempor incididunt adipisicing. Sint consequat duis elit officia ex cillum est culpa qui ea esse fugiat sunt culpa. Occaecat laboris laborum anim sunt irure est est aliquip elit pariatur nulla anim aute.\r\n",
+      "collections": [
+        6,
+        8,
+        3,
+        7,
+        0
+      ],
+      "profile_image": "https://randomuser.me/api/portraits/women/37.jpg"
+    },
+    {
+      "id": 9,
+      "firstname": "Witt",
+      "surname": "Jackson",
+      "gender": "male",
+      "email": "wittjackson@earwax.com",
+      "password": "exercitation",
+      "address": "802 Kaufman Place, Chemung, West Virginia, 8594",
+      "about": "Nulla qui ad aliquip officia eiusmod incididunt incididunt ad voluptate et. Ipsum Lorem tempor anim ut. Cupidatat id id dolor sint est.\r\n",
+      "collections": [
+        7,
+        2,
+        3,
+        5,
+        9
+      ],
+      "profile_image": "https://randomuser.me/api/portraits/men/60.jpg"
+    },
+    {
+      "firstname": "ciaran",
+      "surname": "roche",
+      "gender": "male",
+      "email": "test@mail.com",
+      "password": "test",
+      "address": "Ferrybank, Waterford",
+      "about": "I created the matrix. I've been waiting for you. You have many questions, and although the process has altered your consciousness, you remain irrevocably human. Ergo, some of my answers you will understand, and some of them you will not. Concordantly, while your first question may be the most pertinent, you may or may not realize it is also irrelevant.",
+      "collections": [
+        4,
+        9,
+        8,
+        7,
+        4,
+        14,
+        10,
+        12
+      ],
+      "profile_image": "https://media.giphy.com/media/26BRCgL3K4lx1zBCw/giphy.gif",
+      "id": 10
+    }]
+  },
+{
+  "model": "Vinyl",
+  "documents":[
+    {
+      "artist": "Sleep",
+      "album": "Holy Mountain",
+      "image": "https://s3-eu-west-1.amazonaws.com/piedpipervinyl/sleep.jpg",
+      "genre": "Doom",
+      "year": 1992,
+      "notes": "Sleeps Holy Mountain is the second studio album by the American band Sleep.It was released in November1992 in Europe, and March1993 in the USA through Earache Records.",
+      "likes": 18,
+      "reviews": [
+        {
+          "user": 1,
+          "name": "Gardner",
+          "date": "5/7/17",
+          "image": "https://randomuser.me/api/portraits/men/11.jpg",
+          "summary": "Love this album"
+        },
+        {
+          "user": 2,
+          "name": "Sondra",
+          "date": "18/8/17",
+          "image": "https://randomuser.me/api/portraits/women/13.jpg",
+          "summary": "My Favorite Album"
+        }
+      ]
+    },
+    {
+      "artist": "Black Sabbath",
+      "album": "Master of Reality",
+      "image": "https://s3-eu-west-1.amazonaws.com/piedpipervinyl/masterofreality.jpg",
+      "genre": "Rock",
+      "year": 1971,
+      "notes": "Catalog entry #3, released on July21, 1971. Master of Reality reached #8 on the U.S. album chart, immediately going gold. It was Black Sabbaths1st album to debut in the Top 10. Also their first album to feature the heavier new sound created by dropping the tuning three semi-tones below the standard E, thus creating the premise for what would become known as the stoner rock sound.",
+      "likes": 54,
+      "reviews": [
+        {
+          "user": 1,
+          "name": "Gardner",
+          "date": "21/9/17",
+          "image": "https://randomuser.me/api/portraits/men/11.jpg",
+          "summary": "Love this album"
+        }
+      ]
+    },
+    {
+      "artist": "Metallica",
+      "album": "Ride The Lightning",
+      "image": "https://s3-eu-west-1.amazonaws.com/piedpipervinyl/ridethelightning.jpg",
+      "genre": "Trash Metal",
+      "year": 1984,
+      "notes": "Ride the Lightning is the second studio album by American heavy metal band Metallica, released on July27,1984, by the independent record label Megaforce Records",
+      "likes": 31,
+      "reviews": [
+        {
+          "user": 10,
+          "name": "ciaran",
+          "date": "3/10/2017",
+          "image": "https://media.giphy.com/media/26BRCgL3K4lx1zBCw/giphy.gif",
+          "summary": "Classic Album"
+        }
+      ]
+    },
+    {
+      "artist": "Uncle Acid and The Deadbeats",
+      "album": "The Night Creeper",
+      "image": "https://s3-eu-west-1.amazonaws.com/piedpipervinyl/nightcreeper.jpg",
+      "genre": "Doom",
+      "year": 2015,
+      "notes": "The Night Creeper is the fourth studio album by English band Uncle Acid & the Deadbeats. The album released on4 September 2015.",
+      "likes": 72,
+      "reviews": [
+        {
+          "user": 2,
+          "name": "Sondra",
+          "date": "18/8/17",
+          "image": "https://randomuser.me/api/portraits/women/13.jpg",
+          "summary": "My Favorite Album"
+        }
+      ]
+    },
+    {
+      "artist": "Uncle Acid and The Deadbeats",
+      "album": "Vol1",
+      "image": "https://s3-eu-west-1.amazonaws.com/piedpipervinyl/vol1.jpg",
+      "genre": "Doom",
+      "year": 2010,
+      "notes": "First released on Friday February13th, (40 years to the day after Black Sabbath’s debut LP), “Vol1” was the first efforts of unknown songwriter, Kevin Starrs. Pressed in small numbers for a non existing fan base, the album took several months to shift all30 CD-R copies and provided a small platform to fund its follow up, “Blood Lust” (2011).",
+      "likes": 113,
+      "reviews": [
+        {
+          "user": 8,
+          "name": "Guadalupe",
+          "date": "2/10/2017",
+          "image": "https://randomuser.me/api/portraits/women/37.jpg",
+          "summary": "Only had to wait seven years for this, thank you uncle Acid :)"
+        },
+        {
+          "user": 10,
+          "name": "ciaran",
+          "date": "3/10/2017",
+          "image": "https://media.giphy.com/media/26BRCgL3K4lx1zBCw/giphy.gif",
+          "summary": "Serious collection of fantastic songs!"
+        }
+      ]
+    },
+    {
+      "artist": "Queens of the Stone Age",
+      "album": "Villians",
+      "image": "https://s3-eu-west-1.amazonaws.com/piedpipervinyl/villians.jpg",
+      "genre": "Rock",
+      "year": 2017,
+      "notes": "Villains is the seventh studio album by American rock band Queens of the Stone Age, released on August25, 2017 through Matador.",
+      "likes": 28,
+      "reviews": []
+    },
+    {
+      "artist": "Primus",
+      "album": "The Desaturating Seven",
+      "image": "https://s3-eu-west-1.amazonaws.com/piedpipervinyl/primus.jpg",
+      "genre": "Rock",
+      "year": 2017,
+      "notes": "The album is a concept album, loosely based on the children's book The Rainbow Goblins, written by Italian author of childrens books, Ul de Rico. Les Claypool used to read the book to his children when they were younger, and was fascinated and inspired by the vibrant artwork and use of colours of the book. Claypool always felt the book's story would make a fascinating musical project, and eventually approached his fellow band members about recording original music based on the story of the book.",
+      "likes": 14,
+      "reviews": [
+        {
+          "user": 10,
+          "name": "ciaran",
+          "date": "3/10/2017",
+          "image": "https://media.giphy.com/media/26BRCgL3K4lx1zBCw/giphy.gif",
+          "summary": "Primus suck!"
+        }
+      ]
+    },
+    {
+      "artist": "Black Flag",
+      "album": "Live '84",
+      "image": "https://s3-eu-west-1.amazonaws.com/piedpipervinyl/flag.jpg",
+      "genre": "Punk",
+      "year": "1984",
+      "notes": "Live '84 is an album released by Black Flag in 1984 on SST Records. It is a live recording of a show played in 1984 and features mostly tracks from My War and Slip It In. The album was recorded at the Stone nightclub in San Francisco, CA.",
+      "likes": 9,
+      "reviews": []
+    },
+    {
+      "artist": "Ramones",
+      "album": "Rocket to Russia",
+      "image": "https://s3-eu-west-1.amazonaws.com/piedpipervinyl/rocket.jpg",
+      "genre": "Punk",
+      "year": "1977",
+      "notes": "Rocket to Russia is the third studio album by the American punk rock band the Ramones, and was released on November 4, 1977, through Sire Records. Its origins date back to the summer of 1977, when \"Sheena Is a Punk Rocker\" was released as a single.",
+      "likes": 14,
+      "reviews": [
+        {
+          "user": 10,
+          "name": "ciaran",
+          "date": "3/10/2017",
+          "image": "https://media.giphy.com/media/26BRCgL3K4lx1zBCw/giphy.gif",
+          "summary": "Classic Album, 40 years old now"
+        }
+      ]
+    },
+    {
+      "artist": "Black Sabbath",
+      "album": "Vol 4",
+      "image": "https://s3-eu-west-1.amazonaws.com/piedpipervinyl/black4.jpg",
+      "genre": "Rock",
+      "year": "1972",
+      "notes": "Vol. 4 is the fourth studio album by English rock band Black Sabbath, released in September 1972. It was the first album by Black Sabbath not produced by Rodger Bain; guitarist Tony Iommi assumed production duties.",
+      "likes": 7,
+      "reviews": [
+        {
+          "user": 10,
+          "name": "ciaran",
+          "date": "3/10/2017",
+          "image": "https://media.giphy.com/media/26BRCgL3K4lx1zBCw/giphy.gif",
+          "summary": "One of their best"
+        }
+      ]
+    },
+    {
+      "artist": "Monolord",
+      "album": "Empress Rising",
+      "image": "https://s3-eu-west-1.amazonaws.com/piedpipervinyl/monolord.jpg",
+      "genre": "Rock",
+      "year": "2014",
+      "notes": "Empress Rising is the band’s first full-length release and consists of “only” 5 songs, though the album clocks in an impressive length of over 45 minutes. First track is the title track, which is also the longest track on the album, being just over 12 minutes in length. And the album couldn’t start better. After a gentle opener this track just builds up on the fuzz and heavy low-end riffing and slowly introduces more and more elements to the music. Thomas Jäger’s vocals are very good and perhaps initially a bit surprising on first listen. So many doom bands I’ve listened to lately employ the more heavier grunting or more shouting vocal style, while Jäger’s vocals are very spacey, nicely produced by the use of some echoey effects. It’s giving the music a very hypnotic effect.",
+      "likes": 20,
+      "reviews": []
+    },
+    {
+      "artist": "The Doors",
+      "album": "L.A. Woman",
+      "image": "https://s3-eu-west-1.amazonaws.com/piedpipervinyl/doors.jpg",
+      "genre": "Rock",
+      "year": "1971",
+      "notes": "6th studio album released April 19, 1971.\nThe US and UK releases were initially issued in rounded-corner sleeves with embossed text. The front has a cut-out window with clear acetate, on which the band photo is printed black half-tone. The disc is in a yellow radius-corner liner, which provides background color to the sleeve window image when inserted.\n\nLater sleeves or cover images simply emulate this effect, with no die-cuts and with normal square corners.",
+      "likes": 2,
+      "reviews": [
+        {
+          "user": 10,
+          "name": "ciaran",
+          "date": "3/10/2017",
+          "image": "https://media.giphy.com/media/26BRCgL3K4lx1zBCw/giphy.gif",
+          "summary": "My favourite doors album"
+        }
+      ]
+    },
+    {
+      "artist": "Fear Factory",
+      "album": "Demanufacture",
+      "image": "https://s3-eu-west-1.amazonaws.com/piedpipervinyl/fearfac.jpg",
+      "genre": "Metal",
+      "year": "1995",
+      "notes": "Demanufacture is the second studio album by American industrial metal band Fear Factory, released on June 13, 1995 by Roadrunner Records. Burton C. Bell wrote a majority of the lyrics and Dino Cazares wrote all the music.",
+      "likes": 10,
+      "reviews": [
+        {
+          "user": 10,
+          "name": "ciaran",
+          "date": "4/10/2017",
+          "image": "https://media.giphy.com/media/26BRCgL3K4lx1zBCw/giphy.gif",
+          "summary": "Self Bias Resistor . . . heaviest song ever"
+        }
+      ]
+    },
+    {
+      "artist": "Metallica",
+      "album": ". . . And Justice For All",
+      "image": "https://s3-eu-west-1.amazonaws.com/piedpipervinyl/justice.jpg",
+      "genre": "Metal",
+      "year": "1988",
+      "notes": "…And Justice for All is the fourth studio album by American heavy metal band Metallica, released on August 25, 1988, by Elektra Records. It was the band's first studio album to feature bassist Jason Newsted after the death of Cliff Burton in 1986.",
+      "likes": 0,
+      "reviews": []
+    }
+  ]
+}]
