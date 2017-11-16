@@ -78,6 +78,7 @@ exports.destroy = function (req, res){
   })
 }
 
+// gets a users collection
 exports.get = function (req, res) {
   var ids = req.query.id;
   console.log(ids)

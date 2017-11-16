@@ -115,14 +115,14 @@ class Album extends Component{
     }
     this.state.reviews.push(newReview)
 
-    var options = { method: 'PATCH',
-      url: 'http://localhost:3000/vinyl/' + this.state.id,
+    var options = { method: 'PUT',
+      url: 'http://localhost:8000/api/vinyl/' + this.state.id,
       headers: 
       { 
         'cache-control': 'no-cache',
         'content-type': 'application/json' },
       body: 
-      { reviews: this.state.reviews },
+      { "reviews": this.state.reviews },
       json: true };
 
     let _ = this;
