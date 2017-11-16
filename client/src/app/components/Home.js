@@ -24,9 +24,9 @@ class CardList extends Component{
 
   getVinyl(){
     var options = { method: 'GET',
-      url: 'http://localhost:3000/vinyl/',
+      url: 'http://localhost:8000/api/vinyl',
       headers: 
-      { 'postman-token': 'b420fb08-a1ef-baeb-e41b-95f19338ab07',
+      {
         'cache-control': 'no-cache',
         'content-type': 'application/json' } };
     
@@ -45,14 +45,14 @@ class CardList extends Component{
 
   handleLike(like, id){
     let newLike = parseInt(like) + 1
-    let newUrl = "http://localhost:3000/vinyl" + '/' + id
-    let options = { method: 'PATCH',
+    let newUrl = "http://localhost:8000/api/vinyl" + '/' + id
+    let options = { method: 'PUT',
       url: newUrl,
       headers: 
       {
         'cache-control': 'no-cache',
         'content-type': 'application/json' },
-      body: { likes: newLike },
+      body: { "likes": newLike },
       json: true };
       let _ = this;
       request(options, function (error, response, body) {

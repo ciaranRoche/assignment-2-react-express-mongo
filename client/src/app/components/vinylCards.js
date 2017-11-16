@@ -42,11 +42,11 @@ class VinylCards extends Component{
       return -vinyl.likes
     })
     return albums.map((data) => {
-      return <Card key={data.id}>
-        <Link to={'album/' + data.id}><Image src={data.image} style={imageStyle}/></Link>
+      return <Card key={data._id}>
+        <Link to={'album/' + data._id}><Image src={data.image} style={imageStyle}/></Link>
         <Card.Content>
           <Card.Header>
-            <Link to={'album/' + data.id}>{data.album}</Link>
+            <Link to={'album/' + data._id}>{data.album}</Link>
           </Card.Header>
           <Card.Description>
             <p><b>Artist : </b>{data.artist}</p>
@@ -54,7 +54,7 @@ class VinylCards extends Component{
           </Card.Description>
         </Card.Content>
         <Card.Content extra>
-        {this.buildButton(data.id, data.likes)}
+        {this.buildButton(data._id, data.likes)}
         </Card.Content>
       </Card>
     })
