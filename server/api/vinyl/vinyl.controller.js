@@ -71,6 +71,9 @@ exports.destroy = function (req, res){
       message : 'Vinyl deleted',
       id : vinyl._id
     };
+    if(err){
+      res.status(500).send(err)
+    }
     res.status(200).send(response)
   })
 }
