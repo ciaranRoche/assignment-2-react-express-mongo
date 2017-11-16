@@ -25,3 +25,16 @@ exports.create = function (req, res){
     res.status(200).send(createdVinylObject);
   })
 }
+
+exports.show = function (req, res){
+  var id = req.params.id
+  console.log(id)
+  Vinyl.findOne({
+    _id : id
+  }, function(err, vinyl){
+    if (err){
+      res.status(500).send(err)
+    }
+    res.status(200).send(vinyl)
+  })
+}
