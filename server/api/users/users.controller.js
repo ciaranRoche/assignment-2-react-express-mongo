@@ -22,3 +22,43 @@ exports.create = function(req, res){
     res.status(200).send(createdUserObject)
   })
 }
+
+//get user by id
+exports.show = function (req, res){
+  var id = req.params.id;
+  User.findOne({
+    _id : id
+  }, function(err, user){
+    if(err){
+      res.status(500).send(err)
+    }
+    res.status(200).send(user)
+  })
+}
+
+// updates the user
+exports.update = function(req, res){
+  var id = req.params.id;
+  User.findById(id, (err, user) => {
+    if (err) {
+      res.status(500).send(err)
+    }else{
+      user.firstname = req.body.firstname || user.firstname;
+      user.surname = req.body.surname || user.surname;
+      user.gender = req.body.gender || user.gender;
+      user.email = req.body.email || user.email;
+      user.password = req.body.password || user.password;
+      user.address = req.body.address || user.address;
+      user.about = req.body.about || user.about;
+      user.collections = req.body.collections || user.collections;
+      user.profile_image = req.body.profile_image || user.profile_image;
+
+      user.save((err, user) => {
+        if(err){
+          res.status(500).send(err)
+        }
+        res.status(200).send(user)
+      })
+    }
+  })
+}

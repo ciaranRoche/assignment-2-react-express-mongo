@@ -17,7 +17,6 @@ exports.index = function (req, res) {
 // creates a vinyl
 exports.create = function (req, res){
   var vinyl = new Vinyl(req.body);
-  console.log(vinyl)
   vinyl.save((err, createdVinylObject) => {
     if(err){
       res.status(500).send(err)
