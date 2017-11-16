@@ -28,9 +28,7 @@ class SignIn extends Component {
     request(options, function (error, response, body) {
       if (error) throw new Error(error);
       if(response.statusCode == 200){
-        console.log(body)
         let data = JSON.parse(body);
-        console.log(data.email)
         if(data.email == _.state.email && data.password == _.state.password){
           sessionStorage.setItem('userId', data._id)
           setTimeout(() => _.setState({status: 'success'}), 1000)

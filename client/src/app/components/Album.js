@@ -74,7 +74,6 @@ class Album extends Component{
 }
 
   handleCollection(e){
-    console.log(this.state.user)
     e.preventDefault();
     this.setState({
       status:'check'

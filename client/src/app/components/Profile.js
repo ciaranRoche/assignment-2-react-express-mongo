@@ -54,7 +54,6 @@ class Profile extends Component {
     this.state.vinylCollection.forEach((element) =>{
       url += 'id=' + element + '&'
     })
-    console.log(url)
     var options = { method: 'GET',
       url: url,
       headers: 
