@@ -5,7 +5,6 @@ import Loading from './Loading';
 
 const request = require('request-promise')
 
-
 class Album extends Component{
   constructor(props){
     super(props);
@@ -31,7 +30,7 @@ class Album extends Component{
 
   componentDidMount(){
   var options = { method: 'GET',
-    url: 'http://localhost:3000/vinyl/' + this.props.params.id,
+    url: 'http://localhost:8000/api/vinyl/' + this.props.params.id,
     headers: 
     { 
       'cache-control': 'no-cache',
@@ -42,7 +41,7 @@ class Album extends Component{
     let album = JSON.parse(body)
     if(response.statusCode == 200){
       _.setState({
-        id : album.id,
+        id : album._id,
         artist : album.artist,
         album : album.album,
         image : album.image,
@@ -55,7 +54,7 @@ class Album extends Component{
     }
   }).then(() => {
     var options = { method: 'GET',
-      url: 'http://localhost:3000/users/' + sessionStorage.getItem('userId'),
+      url: 'http://localhost:8000/api/users/' + sessionStorage.getItem('userId'),
       headers: 
       {
         'cache-control': 'no-cache',
@@ -75,18 +74,19 @@ class Album extends Component{
 }
 
   handleCollection(e){
+    console.log(this.state.user)
     e.preventDefault();
     this.setState({
       status:'check'
     })
-    this.state.user.collection.push(this.state.id)
-    let options = { method: 'PATCH',
-      url: "http://localhost:3000/users/" + this.state.user.id,
+    this.state.user.collections.push(this.state.id)
+    let options = { method: 'PUT',
+      url: "http://localhost:8000/api/users/" + this.state.user._id,
       headers: 
-      { 'postman-token': 'c0777f44-572d-7e52-9c75-851c819ccb95',
+      { 
         'cache-control': 'no-cache',
         'content-type': 'application/json' },
-      body: { collection: this.state.user.collection },
+      body: { "collections": this.state.user.collections },
       json: true };
 
     let _ = this;  
@@ -183,7 +183,7 @@ class Album extends Component{
   handleConfirm = () => {
     var options = {
       method: 'DELETE',
-      url: 'http://localhost:3000/vinyl/' + '/' + this.state.id,
+      url: 'http://localhost:8000/api/vinyl' + '/' + this.state.id,
       headers: {
         'cache-control': 'no-cache',
         'content-type': 'application/json'

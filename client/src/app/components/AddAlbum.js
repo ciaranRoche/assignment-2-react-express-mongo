@@ -43,7 +43,7 @@ class AddAlbum extends Component{
       return;
     }
     var options = { method: 'POST',
-      url: "http://localhost:3000/vinyl",
+      url: "http://localhost:8000/api/vinyl/",
       headers: 
       { 
         'cache-control': 'no-cache',
@@ -62,7 +62,7 @@ class AddAlbum extends Component{
     let _ = this;
     request(options, function (error, response, body) {
       if (error) throw new Error(error);
-      if(response.statusCode == 201){
+      if(response.statusCode == 200){
         setTimeout(() => _.setState({status: 'success'}) ,1000);
       }
     });

@@ -9,7 +9,7 @@ var User = mongoose.model('User', {
   password: String,
   address: String,
   about: String,
-  collections: [Number],
+  collections: [String],
   profile_image: String
 });
 

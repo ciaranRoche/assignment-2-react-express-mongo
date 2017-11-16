@@ -65,7 +65,7 @@ class SignUp extends Component{
     let _ = this
     request(options, function(error, response, body){
       if(error) throw new Error(error);
-      sessionStorage.setItem('userId', body.id);
+      sessionStorage.setItem('userId', body._id);
       if(response.statusCode == 200){
         setTimeout(() => _.setState({status : 'success'}), 1000)
       }

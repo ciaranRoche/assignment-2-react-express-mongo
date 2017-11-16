@@ -23,7 +23,7 @@ class Profile extends Component {
 
   componentDidMount() {
   var options = { method: 'GET',
-    url: 'http://localhost:3000/users/' + sessionStorage.getItem('userId'),
+    url: 'http://localhost:8000/api/users/' + sessionStorage.getItem('userId'),
     headers: 
     {
       'cache-control': 'no-cache',
@@ -40,7 +40,7 @@ class Profile extends Component {
         email: data.email,
         address: data.address,
         about: data.about,
-        vinylCollection: data.collection,
+        vinylCollection: data.collections,
         profileImage: data.profile_image
       })
     }
@@ -54,6 +54,7 @@ class Profile extends Component {
     this.state.vinylCollection.forEach((element) =>{
       url += 'id=' + element + '&'
     })
+    console.log(url)
     var options = { method: 'GET',
       url: url,
       headers: 
