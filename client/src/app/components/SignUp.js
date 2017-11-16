@@ -43,7 +43,7 @@ class SignUp extends Component{
     this.setState({status : 'check'})
     var options = {
       method: 'POST',
-      url : 'http://localhost:3000/users/',
+      url : 'http://localhost:8000/api/users/',
       headers:{
         'cache-control': 'no-cache',
         'content-type': 'application/json'
@@ -66,7 +66,7 @@ class SignUp extends Component{
     request(options, function(error, response, body){
       if(error) throw new Error(error);
       sessionStorage.setItem('userId', body.id);
-      if(response.statusCode == 201){
+      if(response.statusCode == 200){
         setTimeout(() => _.setState({status : 'success'}), 1000)
       }
     });

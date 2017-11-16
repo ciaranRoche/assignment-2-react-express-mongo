@@ -78,7 +78,7 @@ exports.update = function(req, res){
 
 // deletes a user
 exports.destroy = function (req, res){
-  User.findByIdAndRemove(req.params.id, (err, vinyl) => {
+  User.findByIdAndRemove(req.params.id, (err, user) => {
     var response = {
       message : 'User is no more',
       id : user._id
