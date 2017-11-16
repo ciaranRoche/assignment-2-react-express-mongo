@@ -50,7 +50,7 @@ class Profile extends Component {
   }
 
   getVinyl(){
-    let url = 'http://localhost:3000/vinyl?';
+    let url = 'http://localhost:8000/api/vinyl/collection/1?';
     this.state.vinylCollection.forEach((element) =>{
       url += 'id=' + element + '&'
     })

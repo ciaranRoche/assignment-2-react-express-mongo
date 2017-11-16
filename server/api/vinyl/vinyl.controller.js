@@ -77,3 +77,17 @@ exports.destroy = function (req, res){
     res.status(200).send(response)
   })
 }
+
+exports.get = function (req, res) {
+  var ids = req.query.id;
+  console.log(ids)
+  Vinyl.find({
+    '_id': { 
+      $in: ids
+    }}, function(err, vinyl){
+     if(err){
+       res.status(500).send(err)
+     }
+     res.status(200).send(vinyl)
+  });
+}
