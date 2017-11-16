@@ -36,6 +36,19 @@ exports.show = function (req, res){
   })
 }
 
+// get user by email
+exports.get = function (req, res){
+  var email = req.params.email;
+  User.findOne({
+    email : email
+  }, function(err, user){
+    if(err){
+      res.status(500).send(err)
+    }
+    res.status(200).send(user)
+  })
+}
+
 // updates the user
 exports.update = function(req, res){
   var id = req.params.id;

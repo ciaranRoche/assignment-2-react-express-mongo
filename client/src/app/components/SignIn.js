@@ -19,7 +19,7 @@ class SignIn extends Component {
   handleClick = (e) => {
     this.setState({status: 'check'})
     let options = { method: 'GET',
-      url: 'http://localhost:3000/users?email=' + this.state.email,
+      url: 'http://localhost:8000/api/users/email/' + this.state.email,
       headers: 
       {
         'cache-control': 'no-cache',
@@ -28,9 +28,11 @@ class SignIn extends Component {
     request(options, function (error, response, body) {
       if (error) throw new Error(error);
       if(response.statusCode == 200){
+        console.log(body)
         let data = JSON.parse(body);
-        if(data[0].email == _.state.email && data[0].password == _.state.password){
-          sessionStorage.setItem('userId', data[0].id)
+        console.log(data.email)
+        if(data.email == _.state.email && data.password == _.state.password){
+          sessionStorage.setItem('userId', data.id)
           setTimeout(() => _.setState({status: 'success'}), 1000)
         }
       }
