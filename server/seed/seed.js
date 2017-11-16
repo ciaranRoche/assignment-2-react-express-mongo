@@ -1,5 +1,5 @@
 /**
- * DB Seeder - seeds MongoDB with documents from `users.json` on disk
+ * DB Seeder - seeds MongoDB with documents from `data.json` on disk
  *
  * To seed, run `npm run-script seed`
  */
@@ -7,19 +7,19 @@
 var seeder = require('mongoose-seed');
 var logger = require('winston');
 
-var seedUser = function(cb) {
+var seed = function(cb) {
   seeder.connect('mongodb://localhost/db', function() {
 
-    // Load the User model
+    // Load the User and Vinyl model
     seeder.loadModels([
       'models/user.js',
       'models/vinyl.js'
     ]);
 
-    // Drop existing User documents
+    // Drop existing User and Vinyl documents
     seeder.clearModels(['User', 'Vinyl'], function() {
 
-      // Populate from `users.json`
+      // Populate from `data.json`
       seeder.populateModels(require('./data.json'), function(err) {
         if (err) {
           logger.error('Error seeding', err);
@@ -42,11 +42,10 @@ var seedUser = function(cb) {
   });
 };
 
-// Run explicitly (e.g. not require'd)
 if (require.main === module) {
-  seedUser(function() {
+  seed(function() {
     logger.log('Seeding complete, exiting.');
   });
 }
 
-module.exports = seedUser;
+module.exports = seed;
