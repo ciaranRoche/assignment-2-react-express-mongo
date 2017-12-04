@@ -22,7 +22,7 @@ There is also a profile page which shows the users profile, their details and th
  + Add Album to a Collection
 
 ## Installation requirements.
- #### Software user to develop the app
+ #### Software used to develop the app
 + ReactJS - ^16.0.0
 + React-Dom - ^16.0.0
 + React-Router - ^3.2.0
@@ -40,6 +40,22 @@ There is also a profile page which shows the users profile, their details and th
 + Webpack - ^3.6.0
 + Webpack-Combine-Loaders - ^2.0.3
 + Webpack-Dev-Server - ^2.9.1
+
++ Body-Parser - ^1.18.2
++ Cookie-Parser - ^1.4.3
++ Cors - ^2.8.4
++ Debug - ^2.6.9
++ Express - ^4.15.5
++ Jade - ^1.11.0
++ mongoose - ^4.13.2
++ mongoose seed - ^0.40.
++ morgan - ^1.9.0
++ serve-favicon - ^2.4.5
++ winston - ^2.4.0
++ nodemon - ^1.12.1
++ chai - ^3.5.0
++ chai - ^3.0.0
++ mocha - ^3.0.2
 
 Ensure an instance of mongoDB is running locally
 
