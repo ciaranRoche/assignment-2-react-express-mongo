@@ -61,8 +61,8 @@ describe('Vinyl', function () {
   describe('/DELETE vinyl/:id', function() {
     it('should delete a single vinyl', function(done) {
       //Find a user in the DB
-      Vinyl.findOne({}, function(err, user) {
-        var id = user._id;
+      Vinyl.findOne({}, function(err, vinyl) {
+        var id = vinyl._id;
         // Delete user by id
         chai.request(url)
           .delete('/api/vinyl/' + id)
