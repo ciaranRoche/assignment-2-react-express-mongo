@@ -41,16 +41,26 @@ There is also a profile page which shows the users profile, their details and th
 + Webpack-Combine-Loaders - ^2.0.3
 + Webpack-Dev-Server - ^2.9.1
 
-Clone Project and `cd` into the directory.
+Ensure an instance of mongoDB is running locally
+
+Clone Project and `cd` into the `client` directory.
 ```
 $ npm install
 $ npm start
 ```
-Open a seperate terminal and `cd` into the directory and run the following command to start the `json-server`
+Open a seperate terminal and `cd` into the `server` directory
 ```
-$ node server
+$ npm install
+// run seed
+$ npm run-script seed
+$ npm start
 ```
-The SPA is hosted at the webpack default server of 8080 and the json-server on 3000
+To run tests on the express server, `cd` into the `server` directory
+```
+$ npm test
+```
+
+The SPA is hosted at the webpack default server of 8080
 
 ## Data Model Design.
 The Json server is comprised of two entities, vinyl and users, and example of both can be seen below
