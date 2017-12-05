@@ -198,6 +198,8 @@ As can be seen in the commit history on this repo, the project went through a go
 Next, I threw my hand at webpack and wrote a config file to compile the javascript. This was time-consuming and lead to many problems, but through the problems, it forced me to get a better understanding of webpack.
 I also researched Redux, but due to time I abandoned this idea, the research and examples can be seen at this [repo here.](https://github.com/ciaranRoche/redux-react-basics)
 
+As the scope of the client side app did not feature an UPDATE, I added an UPDATE to both the user and vinyl types. I alos used mongoose-seed to populate the database I started to look into loggers and used Winston, over the convention console.log. I did a bit of unit testing, mainly to support that the UPDATE feature works. For this I used Mocha and Chai. I also looked into Docker, and added a docker file to the server. This allowed me to easily deploy it on AWS
+
 
 
 
