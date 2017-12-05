@@ -78,6 +78,22 @@ $ npm test
 
 The SPA is hosted at the webpack default server of 8080
 
+#### Web API interface.
+
++ GET /api/users/ - Get all users
++ GET /api/users/:id - Get a single user
++ GET /api/users/email/:email - Get a single user based on an email
++ POST /api/users/ - Add a user
++ PUT /api/users/:id - Edit a user
++ DELETE /api/users/:id - Delete a user
+
++ GET /api/vinyl/ - Get all vinyl
++ GET /api/vinyl/:id - Get a vinyl by id
++ GET /api/vinyl/collection/:id - Get a collection of vinyls
++ POST /api/vinyl/ - Add a vinyl
++ PUT /api/vinyl/:id - Edit a vinyl
++ DELETE /api/vinyl/:id - Delete a vinyl
+
 ## Data Model Design.
 The Json server is comprised of two entities, vinyl and users, and example of both can be seen below
 #### vinyl
